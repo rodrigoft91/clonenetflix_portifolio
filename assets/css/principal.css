@@ -1,13 +1,19 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
 body {
+
     margin: 0 auto;
     padding: 0;
     background-color: black;
     width: 100vw;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
-.cabecalho{
+.cabecalho {
 
     width: 100vw;
     padding: 0.8rem;
@@ -19,7 +25,7 @@ body {
 }
 
 
-.navegacao{
+.navegacao {
 
     width: 60vw;
     display: flex;
@@ -29,18 +35,19 @@ body {
 
 }
 
-.botoes__cabecalho{
+.botoes__cabecalho {
     display: flex;
     gap: 1.3rem;
 
 }
 
-.botoes{
+.botoes {
 
     font-size: 1.3rem;
 
 }
-.logo__cabecalho{
+
+.logo__cabecalho {
 
     width: 7vw;
 
@@ -60,7 +67,7 @@ body {
             rgba(0, 0, 0, 0.2) 80%,
             rgba(0, 0, 0, 0.8) 100%),
         url(../img/banner1.png);
-        background-size: cover;
+    background-size: cover;
     padding: 0.26rem 0.75rem 0 0.75rem;
 }
 
@@ -95,18 +102,18 @@ body {
 
 }
 
-.icone__play{
+.icone__play {
 
     font-size: 1rem;
     padding-right: 0.5rem;
 
 }
 
-.icone__info{
+.icone__info {
 
     font-size: 1rem;
     padding-right: 0.5rem;
-    
+
 
 }
 
@@ -120,6 +127,7 @@ body {
     padding: 0.6rem 2rem;
 
 }
+
 .botao__maisinfo {
 
     width: 13vw;
@@ -130,16 +138,25 @@ body {
     border: 1px solid transparent;
     border-radius: 3px;
     padding: 0.6rem 2rem;
+    overflow: hidden;
+}
+
+.caixa-lista{
+
+    margin: 0 0 2rem;
 
 }
 
-.minha-lista{
+.minha-lista {
+
     display: flex;
     padding: 1rem 4rem;
-    
+    overflow: hidden;
+
+
 }
 
-.titulo__minhalista{
+.titulo__minhalista {
 
     color: #FFFFFF;
     padding-left: 4rem;
@@ -147,20 +164,23 @@ body {
 
 }
 
-.imagens__minhalista{
+.imagem__lista{
 
-    display: flex;
-    gap: 0.7rem;
+    margin-right: 2rem;
+    transition: .30s;
+    width: 22vw;
+
 }
 
 .imagem__lista:hover{
 
     transform: scale(1.1);
-    transition: .25s;
-    padding: 0 1rem;
+
 }
 
-.redessociais{
+
+
+.redessociais {
 
     display: flex;
     gap: 2rem;
@@ -169,19 +189,19 @@ body {
 
 }
 
-.icones{
+.icones {
 
     font-size: 1.5rem;
 
 }
 
-.icones:hover{
+.icones:hover {
 
     transform: rotate(1turn);
     transition: 1s;
 }
 
-.rodape{
+.rodape {
     color: #535654;
     width: 90vw;
     display: flex;
@@ -189,7 +209,7 @@ body {
     padding: 2rem 0 4rem;
 }
 
-.menu__rodape{
+.menu__rodape {
 
 
     display: flex;
@@ -199,29 +219,36 @@ body {
 
 }
 
-.botao__rodape{
+.botao__rodape {
 
     border: 1px solid #535654;
     border-radius: 5px;
     width: 10vw;
     text-align: center;
-    padding: 0.4rem ;
+    padding: 0.4rem;
 
 }
 
-.botao__rodape:hover{
+.botao__rodape:hover {
 
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
 
 }
 
-.rodape-info{
+.rodape-info {
     padding-top: 2.8rem;
 }
 
-footer a:hover{
+footer a:hover {
 
     color: #FFFFFF;
 
 }
+
+.carousel{
+
+    padding: 1rem 0 0 4rem;
+
+}
+
