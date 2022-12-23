@@ -32,7 +32,6 @@ body {
     justify-content: space-between;
     color: #FFFFFF;
 
-
 }
 
 .botao__navegacao{
@@ -50,6 +49,7 @@ body {
     align-items: center;
     gap: 1.5rem;
     font-size: 0.9rem;
+
 
 }
 
@@ -176,7 +176,7 @@ body {
 
 .botoes-banner {
 
-    width: 50vw;
+    width: 60vw;
     display: flex;
     flex-wrap: wrap;
     gap: 0 1.3rem;
@@ -197,13 +197,13 @@ body {
     text-align: center;
     font-weight: bold;
     border-radius: 3px;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.8rem;
 
 }
 
 .botao__maisinfo {
 
-    width: 12vw;
+    width: 14vw;
     background-color: #535654;
     color: #FFFFFF;
     font-weight: bold;
@@ -239,7 +239,7 @@ body {
 
 .imagem__lista{
 
-    margin-right: 2rem;
+    margin-right: 1rem;
     transition: .30s;
 
 
@@ -326,6 +326,16 @@ footer a:hover {
 
     padding: 1rem 0 0 1.5rem;
 
+}
+
+.copyright-responsivo{
+
+    display: none;
+}
+
+.redessociais-responsivo{
+
+    display: none;
 }
 
 @media  screen and (max-width: 480px) {
@@ -460,5 +470,16 @@ footer a:hover {
     }
 
 
+}
+
+@media screen and (min-width: 1024px) {
+
+    .menu-lateral{
+
+        width: 50vw;
+    }
+
+
+    
 }
 
