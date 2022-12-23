@@ -23,26 +23,34 @@
 
     <header class="cabecalho">
 
-        <h1><a href="index.html"><img src="./assets/img/logo.png" alt="Logo Netflix" class="logo__cabecalho"></a></h1>
+        <button class="botao__navegacao"><i class="fa-solid fa-bars"></i></button>
 
-        <nav class="navegacao">
-            <a href="index.html">Inicio</a>
-            <a href="#">Séries</a>
-            <a href="#">Filmes</a>
-            <a href="#">Bombando</a>
-            <a href="#">Minha Lista</a>
-        </nav>
+
+        <h1><a href="index.html"><img src="./assets/img/logo.png" alt="Logo Netflix" class="logo__cabecalho"></a></h1>
 
         <div class="botoes__cabecalho">
 
             <button class="botoes" aria-label="busca"><i class="fa-solid fa-magnifying-glass"></i></button>
             <button class="botoes" aria-label="notificação"><i class="fa-solid fa-bell botao__notificacao"></i></button>
 
-            <a href="#"><img src="./assets/img/usuario.png" alt=""></a>
+            <a href="#"><img src="./assets/img/usuario.png" alt="imagem do usuário" class="foto__usuário"></a>
 
         </div>
 
     </header>
+
+    <nav class="menu-lateral--ativo menu-lateral ">
+
+        <a href="#" class="menu__lateral--link"><i class="fa-solid fa-house icone__menu"></i> Inicio</a>
+        <a href="#" class="menu__lateral--link"> <i class="fa-solid fa-film icone__menu"></i> Séries</a>
+        <a href="#" class="menu__lateral--link"><i class="fa-solid fa-video icone__menu"></i> Filmes</a>
+        <a href="#" class="menu__lateral--link"><i class="fa-solid fa-fire icone__menu"></i> Bombando</a>
+        <a href="#" class="menu__lateral--link"><i class="fa-solid fa-list icone__menu"></i> Minha Lista</a>
+
+
+    </nav>
+
+
 
     <main>
 
@@ -58,8 +66,8 @@
                 </p>
 
                 <div class="botoes-banner">
-                    <a href="#" class="botao__assistir"> <i class="fa-solid fa-play icone__play"></i>Assistir</a>
-                    <a href="#" class="botao__maisinfo"><i class="fa-solid fa-circle-info icone__info"></i>Mais
+                    <a href="#" class="botao__assistir"> <i class="fa-solid fa-play icone__banner"></i>Assistir</a>
+                    <a href="#" class="botao__maisinfo"><i class="fa-solid fa-circle-info icone__banner"></i>Mais
                         informações</a>
                 </div>
 
@@ -74,7 +82,8 @@
 
             <span class="titulo__minhalista">Minha lista</span>
 
-            <div class="carousel" data-flickity='{"pageDots":false, "cellAlign": "left", "freeScroll": true }'>
+            <div class="carousel"
+                data-flickity='{"wrapAround": true, "pageDots": false, "cellAlign": "left", "freeScroll": true, "prevNextButtons": false, "draggable": true }'>
 
                 <a href="#"><img src="./assets/img/poster_ozark.png" alt="" class="imagem__lista"></a>
                 <a href="#"><img src="./assets/img/poster_polar.png" alt="" class="imagem__lista"></a>
@@ -91,9 +100,10 @@
 
         <section class="caixa-lista">
 
-            <span class="titulo__minhalista">Em alta</span>
+            <span class="titulo__minhalista">Séries excêntricas estrangeiras</span>
 
-            <div class="carousel" data-flickity='{ "pageDots": false, "cellAlign": "left", "freeScroll": true }'>
+            <div class="carousel"
+                data-flickity='{ "wrapAround": true, "pageDots": false, "cellAlign": "left", "freeScroll": true, "prevNextButtons": false }'>
 
                 <a href="#"><img src="./assets/img/poster_arremessandoalto.png" alt="" class="imagem__lista"></a>
                 <a href="#"><img src="./assets/img/poster_boneca.png" alt="" class="imagem__lista"></a>
@@ -111,9 +121,10 @@
 
         <section class="caixa-lista">
 
-            <span class="titulo__minhalista">Minha lista</span>
+            <span class="titulo__minhalista">Em alta</span>
 
-            <div class="carousel" data-flickity='{"pageDots": false, "cellAlign": "left", "freeScroll": true}'>
+            <div class="carousel"
+                data-flickity='{"wrapAround": true, "pageDots": false, "cellAlign": "left", "freeScroll": true, "prevNextButtons": false}'>
 
                 <a href="#"><img src="./assets/img/poster_7vidaslea.png" alt="" class="imagem__lista"></a>
                 <a href="#"><img src="./assets/img/poster_fucking.png" alt="" class="imagem__lista"></a>
@@ -135,16 +146,18 @@
 
 
         <div class="rodape">
-            <div class="menu__rodape">
-                <div class="redessociais">
 
-                    <a href="#"><span><i class="fa-brands fa-facebook-f icones"></i></span></a>
-                    <a href="#"><span><i class="fa-brands fa-instagram icones"></i></span></a>
-                    <a href="#"><span><i class="fa-brands fa-twitter icones"></i></span></a>
-                    <a href="#"><span><i class="fa-brands fa-youtube icones"></i></span></a>
+            <div class="redessociais">
+
+                <a href="#"><span><i class="fa-brands fa-facebook-f icones"></i></span></a>
+                <a href="#"><span><i class="fa-brands fa-instagram icones"></i></span></a>
+                <a href="#"><span><i class="fa-brands fa-twitter icones"></i></span></a>
+                <a href="#"><span><i class="fa-brands fa-youtube icones"></i></span></a>
 
 
-                </div>
+            </div>
+
+            <div class="conteudo-rodape">
 
                 <a href="#">
                     <p class="texto__rodape">Idioma e legendas</p>
@@ -158,11 +171,10 @@
 
                 <a href="#" class="botao__rodape">Código de serviço</a></a>
 
-                <span class="copyright"> 1997-2022 Netflix. Inc</span>
+                <span class="copyright"> © 1997-2022 Netflix. Inc</span>
             </div>
 
-            <div class="menu__rodape rodape-info">
-
+            <div class="conteudo-rodape">
                 <a href="#">
                     <p class="texto__rodape">Audiodescrição</p>
                 </a>
@@ -172,11 +184,11 @@
                 <a href="#">
                     <p class="texto__rodape">Avisos legais</p>
                 </a>
-
             </div>
 
-            <div class="menu__rodape rodape-info">
 
+
+            <div class="conteudo-rodape">
                 <a href="#">
                     <p class="texto__rodape">Centro de ajuda</p>
                 </a>
@@ -186,11 +198,11 @@
                 <a href="#">
                     <p class="texto__rodape">Preferência de cookies</p>
                 </a>
-
             </div>
 
-            <div class="menu__rodape rodape-info">
 
+
+            <div class="conteudo-rodape">
                 <a href="#">
                     <p class="texto__rodape">Cartão pré-pago</p>
                 </a>
@@ -200,13 +212,28 @@
                 <a href="#">
                     <p class="texto__rodape">Informações corporativas</p>
                 </a>
+            </div>
+
+            <div class="redessociais-responsivo">
+
+                <a href="#"><span><i class="fa-brands fa-facebook-f icones"></i></span></a>
+                <a href="#"><span><i class="fa-brands fa-instagram icones"></i></span></a>
+                <a href="#"><span><i class="fa-brands fa-twitter icones"></i></span></a>
+                <a href="#"><span><i class="fa-brands fa-youtube icones"></i></span></a>
+
 
             </div>
+
+            <a href="#" class="botao__rodaperesponsivo">Código de serviço</a></a>
+
+            <span class="copyright-responsivo"> © 1997-2022 Netflix. Inc</span>
+
         </div>
 
     </footer>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
