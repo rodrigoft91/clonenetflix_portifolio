@@ -91,7 +91,7 @@ body {
 
 .menu-lateral{
 
-    width: 15vw;
+    width: 20vw;
     height: 100vh;
     position: absolute;
     left: -100vw;
@@ -176,10 +176,10 @@ body {
 
 .botoes-banner {
 
-    width: 60vw;
+    width: 80vw;
     display: flex;
     flex-wrap: wrap;
-    gap: 0 1.3rem;
+    gap: 0 1rem;
 
 }
 
@@ -203,7 +203,6 @@ body {
 
 .botao__maisinfo {
 
-    width: 14vw;
     background-color: #535654;
     color: #FFFFFF;
     font-weight: bold;
@@ -378,12 +377,12 @@ footer a:hover {
     }
 
     .banner{
-        gap: 0.6rem;
+        gap: 0.5rem;
     }
 
     .botoes-banner{
 
-        width: 80vw;
+        width: 85vw;
 
 
     }
@@ -392,7 +391,6 @@ footer a:hover {
 
         font-size: 0.8rem;
         width: 25vw;
-        height: 3.5vh;
         padding: 0.5rem 0.5rem;
         text-align: center;
         opacity: 0.9;
@@ -402,8 +400,7 @@ footer a:hover {
         .botao__maisinfo{
 
         font-size: 0.8rem;
-        width: 40vw;
-        height: 3.5vh;
+        width: 50vw;
         padding: 0.5rem 0.5rem;
         text-align: center;
         opacity: 0.8;
